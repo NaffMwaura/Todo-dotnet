@@ -10,11 +10,11 @@ namespace RazorTodoApp.Pages
         public List<TodoItem> TodoList { get; set; } = new();
 
         [BindProperty]
-        public string NewTask { get; set; }
+        public string? NewTask { get; set; }
 
         public void OnGet()
         {
-            // Optionally load from a DB or file here
+            // Optional: load existing tasks from a data source
         }
 
         public void OnPostAdd()
